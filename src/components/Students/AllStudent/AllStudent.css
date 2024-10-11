@@ -1,0 +1,92 @@
+#all-students-main-wrapper{
+    display: flex;
+    max-width: 100vw;
+    min-width: 100px;
+    width: 100%;
+}
+#all-students-inner-wrapper{
+    padding: 20px;
+}
+.student-with-header {
+    max-width: 100vw;
+    min-width: 100px;
+    width: 100%;
+}
+
+#student-main-wrapper {
+    display: flex;
+    width: 100%;
+}
+
+#student-inner-wrapper {
+    width: 100%;
+}
+
+.student-header-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.student-main-btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.student-add-btn {
+    background-color: #212143;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 25px;
+}
+
+.fee-management {
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    padding: 5px 30px;
+}
+
+.superhead {
+    /* background-color: #f5f5f5; */
+    /* padding: 20px; */
+}
+
+.header-all-students {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.header-all-students table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.header-all-students table thead {
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.header-all-students table thead tr th {
+    padding: 10px;
+    border: 1px solid #c9c9c9;
+}
+
+.header-all-students table tbody tr td {
+    padding: 5px;
+    border: 1px solid #c9c9c9;
+    text-align: center;
+}
+.all-stud-editViewDlt{
+    display: flex;
+}
+.view-details {
+    font-size: 20px;
+    color: #212143;
+    border: none;
+    cursor: pointer;
+}

@@ -1,0 +1,270 @@
+/* Main Wrapper */
+#timeline-main-wrapper {
+    display: flex;
+    /* padding: 20px; */
+    background-color: #f9f9f9;
+}
+
+#timeline-inner-wrapper {
+    flex: 1;
+    width: 100%;
+    /* padding: 20px; */
+    /* background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+/* Header Styles */
+.timeline-header-div h4 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Fee Timeline Page */
+.fee-timeline-page {
+    margin-top: 20px;
+}
+
+.fee-timeline-page h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #444;
+}
+
+/* Timeline Container */
+.timeline-container {
+    display: flex;
+}
+
+.timeline {
+    position: relative;
+    flex: 1;
+    padding: 20px;
+}
+
+/* Timeline Bar */
+.timeline-bar {
+    position: absolute;
+    left: 20px;
+    top: 21px;
+    bottom: 0;
+    width: 2px;
+    background-color: rgb(171, 169, 169);
+}
+
+/* Timeline Item */
+.timeline-item {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.timeline-dot {
+    height: 15px;
+    width: 15px;
+    background-color: #212143;
+    border-radius: 50%;
+    position: absolute;
+    left: 14px;
+}
+
+.timeline-content {
+    background-color: #f1f1f1;
+    padding: 15px;
+    margin-left: 30px; /* Leave space for the dot */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Fee Details Container */
+.fee-details-container {
+    display: flex;
+    justify-content: space-between;
+    /* grid-template-columns: repeat(3, 1fr); */
+    /* gap: 150px; */
+    width: 768px;
+    /* max-width: ; */
+    margin-top: 10px;
+    padding: 20px;
+    /* border: 1px solid; */
+}
+.fee-detail{
+  width: 33%;
+  /* background-color: pink; */
+}
+/* Pay Now Button */
+.pay-now-btn {
+    background-color: #008cba;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin-top: 15px; /* Add margin for spacing */
+}
+
+.pay-now-btn:hover {
+    background-color: #005f7a;
+}
+
+/* Modal Styles */
+.payment-receipt-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    z-index: 1000;
+}
+
+.receipt-content {
+    text-align: left;
+}
+
+.close-receipt-btn {
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.close-receipt-btn:hover {
+    background-color: #c0392b;
+}
+
+/* Timeline Styles */
+.timeline-card {
+    background-color: #f1f1f1;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    position: relative;
+}
+
+.timeline-title {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.timeline-card p {
+    margin: 5px 0;
+}
+.date-value-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.date-value-item {
+    display: flex;
+    margin-bottom: 10px; /* Adds space between date-value groups */
+}
+/* Payment Capture Popup Box CSS *//* Payment Capture Popup Box CSS */
+.payment-popup-box{
+    position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 12;
+  }
+  .popup-display-non{
+    display: none;
+  }
+  .payment-page-bg-blur{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  }
+  .payment-popup-card{
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    width: 500px;
+    padding: 40px 0px;
+    position: relative;
+    &>.payment-popup-cancel-btn{
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      padding: 5px;
+      width: 32px;
+      height: 32px;
+      cursor: pointer;
+      background-color: whitesmoke;
+      border-radius: 5px;
+    }
+    &>form{
+      width: 85%;
+      background-color: whitesmoke;
+      padding: 20px;
+      margin: auto;
+      &>.payment-popup-field{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* border: 1px solid blue; */
+        width: 100%;
+        margin: 5px auto;
+        padding: 5px;
+        &>label{
+          display: block;
+          /* border: 1px solid red; */
+          width: 50%;
+        }
+        &>span{
+          display: block;
+          /* border: 1px solid tomato; */
+          width: 50%;
+        }
+      }
+  
+      /* payment-types-box  */
+      &>.payment-types{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        width: 100%;
+        &>div{
+          padding: 10px;
+          /* width: 50%; */
+        }
+      }
+    }
+  }
+  .pay-now-field{
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: end;
+  }
+  .type-pay{
+    margin-left: 97px;
+  }
+  .pay-now-btn{
+    background-color: #212143;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: #212143;
+  }
+  .payment-popup-cancel-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 5px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+  }

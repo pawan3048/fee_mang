@@ -1,0 +1,148 @@
+.student-with-header {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  #student-main-wrapper {
+    display: flex;
+    flex: 1;
+  }
+  
+  #student-inner-wrapper {
+    flex: 1;
+    /* padding: 20px; */
+    background-color: #f9f9f9; /* Light background color */
+  }
+  
+  .superhead {
+    margin-bottom: 20px;
+  }
+  
+  .student-header-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .student-main-btns {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .student-add-btn,
+  
+  .back-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #092038; /* Primary color */
+    color: white;
+    font-size: 14px;
+  }
+  
+  /* .student-add-btn:hover,
+  .fee-management:hover,
+  .back-button:hover {
+    background-color: #0a233e; /* Darker shade on hover */
+  
+  .details-container {
+    display: flex;
+    margin-top: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    overflow: hidden;
+  }
+  
+  .student-image {
+    flex: 1;
+    padding: 20px;
+    background-color: #f2f2f2; /* Light gray background for image area */
+  }
+  
+  .student-image img {
+    max-width: 100%;
+    border-radius: 8px; /* Round image corners */
+  }
+  
+  .student-info {
+    flex: 2;
+    padding: 20px;
+  }
+  
+  .student-info p {
+    margin: 10px 0;
+  }
+  
+  .back-button {
+    margin-top: 20px; /* Add some space above the back button */
+    background-color: #6c757d; /* Secondary color for back button */
+  }
+  
+  .back-button:hover {
+    background-color: #5a6268; /* Darker shade on hover */
+  }
+  
+  .loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 24px;
+    font-weight: bold;
+    color: red;
+  }
+  .student-image-box {
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    display: inline-block;
+    margin: 20px 20px;
+    text-align: center;
+  height: 200px;
+    max-width: 200px; /* Maximum width to prevent it from being too wide */
+}
+
+  .student-image-box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .next-button,
+  .cancel-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .next-button {
+    background-color: #102d50; /* Green */
+    color: white;
+  }
+  
+  .cancel-button {
+    background-color: #dad6d5; /* Red */
+    color: rgb(7, 7, 7);
+  }

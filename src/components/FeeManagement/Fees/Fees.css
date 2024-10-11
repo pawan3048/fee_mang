@@ -1,0 +1,389 @@
+#fees-main-wrapper-with-header {
+  display: flex;
+  flex-direction: column;
+  max-width: 100vw;
+  width: 100%;
+}
+
+#fees-main-wrapper {
+  display: flex;
+  max-width: 100vw;
+  min-width: 100px;
+  width: 100%;
+}
+
+#fees-inner-wrapper {
+  padding: 20px;
+  background-color: #f5f5f5;
+  max-width: 1280px;
+  width: 100%;
+}
+
+/* Heading and buttons container */
+.fee-heading-btns-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.fee-heading-btns-container h2 {
+  margin: 0;
+}
+
+.fee-heading-btns-container div {
+  display: flex;
+  gap: 10px;
+}
+
+.fee-heading-btns-container button {
+  padding: 8px 16px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.fee-add-new-stud {
+  background-color: #051f56;
+  color: white;
+}
+/* 
+.fee-management {
+  background-color: #ffffff;
+  color: black;
+} */
+
+/* Fee Form */
+.fee-main-div {
+  width: 100%;
+  padding: 16px;
+  margin: 10px auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.fee-main-div > h5 {
+  background-color: #d9d9d9;
+  padding: 10px;
+}
+
+.new-fee-form {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.fee-form-field {
+flex: 1; /* Allows the field to grow and take equal space */
+display: flex;
+flex-direction: column;
+}
+
+.fee-form-field > label {
+  margin-bottom: 10px;
+}
+.fee-form-field input {
+padding: 8px;
+font-size: 14px;
+border: 1px solid #ccc;
+border-radius: 4px;
+}
+.fee-form-field > select, .fee-form-field > input {
+  border: 1px solid #c2c2c2;
+  border-radius: 5px;
+  outline: none;
+  padding: 8px;
+}
+.split-more-btn{ 
+margin-top: 15px;
+padding: 10px 20px;
+background-color: #0a0a80;
+color: rgb(8, 1, 1);
+border: none;
+cursor: pointer;}
+
+/* Buttons */
+.fee-btn-container {
+  display: flex;
+  justify-content: end;
+}
+
+.fee-btn-container > button {
+  margin: 10px;
+  padding: 7px 16px;
+  border-radius: 5px;
+  border: none;
+}
+
+.fee-btn-container > button:nth-child(1) {
+  background-color: #313150;
+  color: #fff;
+}
+
+.fee-btn-container > button:nth-child(2) {
+  background-color: #d3d3d9;
+}
+.container {
+  width: 100%; /* Adjust width as needed */
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: 100%; 
+}
+
+.dropdown-toggle {
+  background-color: #c6cace; /* Blue background */
+  color: rgb(7, 6, 6);
+  font-weight: 500;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%; /* Button spans the container */
+  text-align: left; /* Text aligns to the left */
+  
+}
+.select-add{
+  background-color: #1e8af6; /* Blue background */
+  color: rgb(7, 6, 6);
+  font-weight: bolder;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%; /* Button spans the container */
+  text-align: left; /* Text aligns to the left */
+  
+}
+.fee-button{
+  margin-top: 2px;
+  background-color: #c6cace; /* Blue background */
+  color: rgb(7, 6, 6);
+  font-weight: bolder;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%; /* Button spans the container */
+  text-align: left; /* Text aligns to the left */
+  
+}
+.dropdown-toggle::after{
+  display: none;
+}
+
+.faicon {
+  float: right; /* Icon aligns to the right */
+}
+
+.dropdown-content {
+  display: none; /* Initially hidden */
+  position: absolute;
+  background-color: #f2f2f2; /* Light gray background */
+  width: 100%; 
+  padding: 15px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1; /* Ensure it appears above other content */
+}
+
+
+
+/* Toggle display on click */
+/* General form styling */
+.split-fee-form {
+margin-top: 20px;
+padding: 20px;
+/* border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+/* Form field styling */
+.fee-form-field {
+display: flex;
+flex-direction: column;
+}
+
+.fee-form-field label {
+font-size: 16px;
+margin-bottom: 8px;
+color: #333;
+}
+
+.fee-form-field input[type="text"],
+.fee-form-field input[type="number"],
+.fee-form-field input[type="date"] {
+padding: 10px;
+font-size: 16px;
+border: 1px solid #ddd;
+border-radius: 5px;
+width: 100%;
+transition: border-color 0.2s ease-in-out;
+}
+
+.fee-form-field input[type="text"]:focus,
+.fee-form-field input[type="number"]:focus,
+.fee-form-field input[type="date"]:focus {
+border-color: #66afe9;
+outline: none;
+}
+.fee-form-field-container {
+display: flex;
+flex-wrap: wrap; /* Allows fields to wrap if the container is too small */
+gap: 15px; /* Adds space between input fields */
+justify-content: space-between; 
+
+}
+/* Styling for buttons */
+.split-fee-btn, 
+.split-more-btn {
+padding: 10px 20px;
+background-color: #05274b;
+color: white;
+border: none;
+cursor: pointer;
+align-self:center;
+border-radius: 5px;
+margin-top: 20px;
+}
+
+.split-fee-btn:hover, 
+.split-more-btn:hover {
+background-color: #011c38;
+}
+
+/* Section titles */
+#fees-main-wrapper-with-header h3 {
+margin-top: 20px;
+font-size: 18px;
+font-weight: 600;
+color: #333;
+}
+
+/* Split total section */
+.fee-form-split-section {
+margin-top: 20px;
+display: flex;
+flex-wrap: wrap;
+gap: 10px;
+}
+
+/* Late fee section */
+.late-fee-section {
+margin-top: 20px;
+padding: 20px;
+
+
+}
+
+.late-fee-section h3 {
+margin-bottom: 15px;
+}
+.late-form-field {
+display: flex;
+justify-content: flex-end; /* Align the entire section to the right */
+align-items: center;
+width: 100%;
+padding-right: 20px; /* Add padding to position it 20px from the right */
+}
+
+.late-form-field label {
+margin-right: 10px; /* Optional: add some space between label and inputs */
+}
+
+.late-form-field div {
+display: flex;
+gap: 10px; /* Add spacing between the radio buttons */
+}
+
+
+.late-form-field label:first-of-type {
+margin-right: 15px; /* Space between "Late Fine" label and radio buttons */
+}
+
+.late-form-field div {
+gap: 20px; /* Space between the radio buttons and their labels */
+}
+
+.late-form-field input[type="radio"] {
+margin-left: 5px;
+gap: 20px;
+}
+
+/* Radio buttons styling */
+.late-fee-section .fee-form-field input[type="radio"] {
+margin-right: 10px;
+}
+
+.late-fee-section .fee-form-field label {
+margin-right: 20px;
+font-size: 16px;
+color: #333;
+}
+
+/* Checkbox styling */
+.fee-form-field input[type="checkbox"] {
+margin-right: 10px;
+}
+/* ==============late fee section======================= */
+.late-fee-section {
+margin-top: 20px;
+display: flex;
+flex-wrap: wrap;
+gap: 10px; /* Space between each field */
+width: fit-content; /* Adjust the width to fit the content */
+margin: 0 auto; /* Center the section horizontally */
+}
+
+.fee-form-field {
+display: flex;
+flex-direction: column;
+gap: 5px; /* Space between label and input */
+width: 100%;
+}
+
+/* Center the checkbox field on its own line */
+.fee-form-checkbox {
+display: flex;
+justify-content: center; /* Center the checkbox and label horizontally */
+align-items: center; /* Vertically center the checkbox and label */
+width: 100%; /* Ensure it takes full width */
+margin-top: 10px; /* Add some space above the checkbox */
+}
+
+.fee-form-checkbox input[type="checkbox"] {
+margin-right: 10px; /* Space between checkbox and its label */
+}
+
+.fee-form-field input {
+width: 100%; /* Make input take full width */
+padding: 8px; /* Add padding for better UI */
+box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+.fee-form-field label {
+font-size: 16px;
+padding: 4px;
+/* border: 1px solid; */
+margin-top: 5px;
+margin-bottom: 0;
+}
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+.split-fee-form,
+.fee-form-split-section,
+.late-fee-section {
+  padding: 15px;
+}
+
+.fee-form-field input[type="text"],
+.fee-form-field input[type="number"],
+.fee-form-field input[type="date"] {
+  font-size: 14px;
+}
+
+.split-fee-btn,
+.split-more-btn {
+  padding: 8px 15px;
+  font-size: 14px;
+}
+}

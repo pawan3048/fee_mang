@@ -1,0 +1,6 @@
+#courses-main-wrapper{
+    display: flex;
+}
+#courses-inner-wrapper{
+    padding: 20px;
+}

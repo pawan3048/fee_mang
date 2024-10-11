@@ -1,0 +1,9 @@
+#students-list-main-wrapper{
+    display: flex;
+    max-width: 100vw;
+    min-width: 100px;
+    width: 100%;
+}
+#students-list-inner-wrapper{
+    padding: 20px;
+}

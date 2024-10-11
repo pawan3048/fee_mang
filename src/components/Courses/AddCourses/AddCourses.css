@@ -1,0 +1,105 @@
+#add-courses-main-wrapper {
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid blue; */
+}
+#add-courses-inner-wrapper {
+  display: flex;
+  background: #f5f5f5;
+}
+.courses-form-container {
+  /* max-width: 1280px; */
+  width: 100%;
+  padding: 20px;
+  border-radius: 8px;
+}
+/* #add-courses-main-wrapper .courses-form-container{
+  color: #A0A0A0;
+} */
+#add-courses-main-wrapper input::placeholder{
+  color: #A0A0A0;
+}
+#add-courses-main-wrapper span{
+  color: #A0A0A0;
+}
+
+/* Course Form */
+.courses-form-div {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 32px;
+  border-radius: 10px;
+}
+.course-form {
+  width: 65%;
+}
+.course-session-time-div input{
+  padding: 8px 16px;
+  outline: none;
+  border-radius: 7px;
+  border: 1px solid #c2c2c2;
+}
+.course-form-field {
+  margin: 10px auto;
+  padding: 10px;
+  margin: 20px auto;
+  & > p {
+    padding: 0;
+    line-height: 0;
+  }
+  & > input {
+    /*Done*/
+    width: 100%;
+    padding: 8px 16px;
+    outline: none;
+    border-radius: 7px;
+    border: 1px solid #c2c2c2;
+  }
+}
+.course-session-time-div {
+  display: flex;
+  justify-content: space-between;
+}
+.course-duration-fields{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &>input{
+    width: 50px;
+    margin: 0 10px;
+    padding: 8px;
+  }
+}
+
+/* Course Detail Btns */
+
+.course-detail-save-btns{
+  display: flex;
+  margin-top: 20px;
+  & > button {
+    margin: 10px;
+    padding: 7px 16px;
+    border-radius: 5px;
+    border: none;
+  }
+  & > button:nth-child(1) {
+    background-color: #313150;
+    color: #fff;
+  }
+  & > button:nth-child(2) {
+    background-color: #d3d3d9;
+  }
+}
+.course-status-run-exp{
+  &>p{
+    margin: 5px;
+    margin-top: 20px;
+  }  
+}
+.course-status-checks{
+  width: 220px;
+  display: flex;
+  &>div{
+    margin-left: 10px;
+  }
+}
